@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'package:fl_chart/fl_chart.dart';
+import 'package:fl_chart/fl_chart.dart';
 import 'dart:async';
 
 void main() => runApp(QuizApp());
@@ -30,6 +30,23 @@ class Question {
 }
 
 // 🔸 SIMULADO 100 Questoes CEA
+// Perguntas com imagem e falta adicionar
+/* 
+16-(D)*
+17-(D)*
+21-(B)*
+23-(C)*
+31-(A)*
+45-(A)*
+52-(B)*
+54-(B)*
+79-(D)*
+83-(C)*
+85-(B)*
+87-(C)*
+88-(A)*
+94-(A)*
+*/
 final List<Question> simulado100Questoes = [
   // Pergunta 01
   Question(
@@ -45,7 +62,7 @@ final List<Question> simulado100Questoes = [
       'd':
           'em mercados livres e abertos, para operações diretas entre quaisquer integrantes do Sistema Financeiro Nacional (SFN).',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'b', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 02
@@ -58,7 +75,7 @@ final List<Question> simulado100Questoes = [
       'c': 'II e IV.',
       'd': 'l e IV',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'd', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 03
@@ -74,7 +91,7 @@ final List<Question> simulado100Questoes = [
       'd':
           'a falta de promoção da diversidade e inclusão pelas empresas dentro do seu quadro de colaboradores.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'b', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 04
@@ -82,7 +99,7 @@ final List<Question> simulado100Questoes = [
     enunciado:
         'Uma resolução do Conselho de Segurança das Nações Unidas (CSNU) determinou indisponíveis os ativos de um cliente, não residente, e que possui conta corrente em quatro bancos, no Brasil. Esses bancos tomaram as seguintes medidas:\nI – Banco A bloqueou imediatamente todos os ativos da conta desse cliente; e comunicou o ocorrido apenas ao Ministério da Justiça e Segurança Pública.\nII – Banco B aguardou a comunicação do Banco Central do Brasil, autorizando a aplicação da sanção e, após recebê-la, bloqueou todos os ativos da conta desse cliente; e comunicou o ocorrido ao Ministério da Justiça e Segurança Pública e ao Conselho de Controle de Atividades Financeira (COAF).\nIII – Banco C aguardou a comunicação do Banco Central do Brasil, autorizando a aplicação da sanção e, após recebê-la, realizou o bloqueio dos ativos da conta desse cliente; e comunicou o ocorrido apenas ao Ministério da Justiça e Segurança Pública.\nIV – Banco D bloqueou imediatamente todos os ativos da conta desse cliente; e comunicou o ocorrido ao Banco Central do Brasil, Ministério da Justiça e Segurança Pública e ao Conselho de Controle de Atividades Financeira (COAF).\nEstá correto o que se afirmar APENAS em',
     alternativas: {'a': 'I', 'b': 'III', 'c': 'IV', 'd': 'II'},
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'c', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 05
@@ -95,7 +112,7 @@ final List<Question> simulado100Questoes = [
       'c': 'II e III, apenas.',
       'd': 'I, II e III.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'a', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 06
@@ -109,7 +126,7 @@ final List<Question> simulado100Questoes = [
       'd':
           'o aumento da alíquota do Imposto sobre Produtos Industrializados (IPI)',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'a', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 07
@@ -125,7 +142,7 @@ final List<Question> simulado100Questoes = [
       'd':
           'um estímulo ao investidor estrangeiro a vender seus reais e comprar dólares norte-americanos para repatriar os seus recursos.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'd', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 08
@@ -138,7 +155,7 @@ final List<Question> simulado100Questoes = [
       'c': 'desvalorização da moeda estrangeira.',
       'd': 'diminuição no preço de divisas em moeda nacional.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'a', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 09
@@ -155,7 +172,7 @@ final List<Question> simulado100Questoes = [
       'd':
           'remuneração dos trabalhadores; renda dos investimentos diretos no país; renda dos investidores em carteira; e renda dos ativos de reserva.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'd', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 10
@@ -172,7 +189,7 @@ final List<Question> simulado100Questoes = [
       'd':
           'seu preço de venda acrescido de todas as despesas para colocá-las a bordo do veículo que as transportará do país de origem para o país de destino.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'd', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 11
@@ -185,7 +202,7 @@ final List<Question> simulado100Questoes = [
       'c': 'R\$ 1.300,00',
       'd': 'R\$ 1.800,00',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'c', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 12
@@ -198,7 +215,7 @@ final List<Question> simulado100Questoes = [
       'c': '1,70% a.m.',
       'd': '1,67% a.m.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'c', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 13
@@ -211,7 +228,7 @@ final List<Question> simulado100Questoes = [
       'c': '3,00% a.m.',
       'd': '2,45% a.m.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'a', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 14
@@ -224,7 +241,7 @@ final List<Question> simulado100Questoes = [
       'c': 'R\$ 571,19',
       'd': 'R\$ 568,65',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'c', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 15
@@ -241,7 +258,7 @@ final List<Question> simulado100Questoes = [
       'd':
           'custo do capital de terceiros e da alíquota de imposto de renda que a empresa está sujeita, apenas.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'b', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 19
@@ -254,7 +271,7 @@ final List<Question> simulado100Questoes = [
       'c': '7,87% a.m.',
       'd': '6,26% a.m',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'c', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 20
@@ -267,7 +284,7 @@ final List<Question> simulado100Questoes = [
       'c': 'R\$ 429,86',
       'd': 'R\$ 409,27',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'c', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 22
@@ -280,7 +297,7 @@ final List<Question> simulado100Questoes = [
       'c': '8,02% a.a.',
       'd': '17,35% a.a.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'a', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 24
@@ -295,7 +312,7 @@ final List<Question> simulado100Questoes = [
           'NTN-B Principal de 126 dias úteis, negociada à taxa de juros de 7,00% a.a..',
       'd': 'NTN-F de 126 dias úteis, com taxa de juros projetada de 7,00% a.p.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'c', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 25
@@ -312,7 +329,7 @@ final List<Question> simulado100Questoes = [
       'd':
           'não assume nenhum tipo de responsabilidade sobre a integralização das ações em lançamento e o risco de sua colocação no mercado cabe exclusivamente à sociedade emitente.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'd', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 26
@@ -329,7 +346,7 @@ final List<Question> simulado100Questoes = [
       'd':
           'utilizar esse limite em razão da prestação de serviço de estabilização de preços dos valores mobiliários objeto da oferta.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'd', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 27
@@ -342,7 +359,7 @@ final List<Question> simulado100Questoes = [
       'c': 'R\$ 2,48',
       'd': 'R\$ 2,50',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'c', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 28
@@ -355,7 +372,7 @@ final List<Question> simulado100Questoes = [
       'c': '150 ações.',
       'd': '198 ações.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'b', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 29
@@ -368,7 +385,7 @@ final List<Question> simulado100Questoes = [
       'c': 'ativa em dólar e passiva em taxa de juros.',
       'd': 'passiva em dólar e passiva em taxa de juros.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'c', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 30
@@ -381,7 +398,7 @@ final List<Question> simulado100Questoes = [
       'c': 'o direito de vender a ação.',
       'd': 'a obrigação de comprar a ação.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'c', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 32
@@ -394,7 +411,7 @@ final List<Question> simulado100Questoes = [
       'c': 'ativa em dólar e passiva em taxa de juros.',
       'd': 'passiva em dólar e passiva em taxa de juros.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'a', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 33
@@ -407,7 +424,7 @@ final List<Question> simulado100Questoes = [
       'c': 'prejuízo de R\$ 119.560.',
       'd': 'lucro de R\$ 5.978.000.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'd', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 34
@@ -420,7 +437,7 @@ final List<Question> simulado100Questoes = [
       'c': 'R\$ 3,2869 por US\$ 1,00',
       'd': 'R\$ 3,2333 por US\$ 1,00',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'd', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 35
@@ -433,7 +450,7 @@ final List<Question> simulado100Questoes = [
       'c': 'pagou R\$ 210.000,00',
       'd': 'pagou R\$ 21.000,00',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'c', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 36
@@ -446,7 +463,7 @@ final List<Question> simulado100Questoes = [
       'c': '“passiva” e “negativo de R\$ 6.569.569,00”.',
       'd': '“ativa” e “positivo de R\$ 6.569.569,00”.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'b', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 37
@@ -460,7 +477,7 @@ final List<Question> simulado100Questoes = [
       'c': 'empresta recursos à outra contraparte.',
       'd': 'recebe da contraparte a taxa de juros da operação (repo rate).',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'b', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 38
@@ -473,7 +490,7 @@ final List<Question> simulado100Questoes = [
       'c': 'T-Notes e T-Bonds',
       'd': 'T-Bills e T-Bonds',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'b', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 39
@@ -486,7 +503,7 @@ final List<Question> simulado100Questoes = [
       'c': 'T-Bills e T-Bonds',
       'd': 'T-Notes e T-Bonds',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'd', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 40
@@ -502,7 +519,7 @@ final List<Question> simulado100Questoes = [
           'recebimentos de aluguéis; rendimentos de debêntures e rendimentos de previdência complementar.',
       'd': 'férias; rendimentos de poupança e 13° salário.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'c', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 41
@@ -515,7 +532,7 @@ final List<Question> simulado100Questoes = [
       'c': 'R\$ 13.750,00',
       'd': 'R\$ 7.500,00',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'd', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 42
@@ -531,7 +548,7 @@ final List<Question> simulado100Questoes = [
       'd':
           'tributados à alíquota de 15,00% na fonte e isentos de Imposto de Renda.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'a', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 43
@@ -544,7 +561,7 @@ final List<Question> simulado100Questoes = [
       'c': 'R\$ 3.750,00',
       'd': 'R\$ 0,00',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'a', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 44
@@ -557,7 +574,7 @@ final List<Question> simulado100Questoes = [
       'c': 'R\$ 15.000,00 sobre o swap e R\$ 11.250,00 sobre o NDF.',
       'd': 'R\$ 15.000,00 tanto para o swap quanto para o NDF.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'c', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 46
@@ -574,7 +591,7 @@ final List<Question> simulado100Questoes = [
       'd':
           'a elevação do cupom cambial poderá provocar desvalorização da cota.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'd', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 47
@@ -587,7 +604,7 @@ final List<Question> simulado100Questoes = [
       'c': 'títulos do governo federal e de baixa duração.',
       'd': 'títulos de instituições financeiras e de alta duração.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'c', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 48
@@ -603,7 +620,7 @@ final List<Question> simulado100Questoes = [
       'd':
           'pode comprar e vender ambos os fundos em suas respectivas instituições financeiras distribuidoras.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'c', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 49
@@ -616,7 +633,7 @@ final List<Question> simulado100Questoes = [
       'c': 'R\$ 450.000,00',
       'd': 'R\$ 495.000,00',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'd', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 50
@@ -624,7 +641,7 @@ final List<Question> simulado100Questoes = [
     enunciado:
         'Considere um investidor que tenha comprado 1.000 cotas de um fundo multimercado com a seguinte alocação:\n− 10% em moeda (dólar norte-americano)\n− 30% em renda variável (ETF que replica o Ibovespa)\n− 60% em renda fixa (100% pós-fixado em Taxa DI)\nSupondo a manutenção desses percentuais, desde a sua entrada no fundo até o resgate, e as condições abaixo no período de investimento:\n− valorização do dólar norte-americano: 15,00%\n− desvalorização do Ibovespa: 20,00%\n− Taxa DI acumulada no período: 10,00%\nAs cotas compradas, desconsiderando quaisquer taxas e custos associados à operação, tiveram um retorno acumulado no período de',
     alternativas: {'a': '1,50%', 'b': '1,20%', 'c': '1,67%', 'd': '5,00%'},
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'a', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 51
@@ -637,7 +654,7 @@ final List<Question> simulado100Questoes = [
       'c': 'I, II e III.',
       'd': 'I e II, apenas.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'c', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 53
@@ -650,7 +667,7 @@ final List<Question> simulado100Questoes = [
       'c': 'R\$ 108.000,00',
       'd': 'R\$ 107.750,00',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'c', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 55
@@ -663,7 +680,7 @@ final List<Question> simulado100Questoes = [
       'c': 'I e II, apenas.',
       'd': 'II, apenas.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'b', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 56
@@ -676,7 +693,7 @@ final List<Question> simulado100Questoes = [
       'c': 'I e III, apenas.',
       'd': 'II e III, apenas.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'c', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 57
@@ -689,7 +706,7 @@ final List<Question> simulado100Questoes = [
       'c': 'I e III, apenas.',
       'd': 'II e III, apenas.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'b', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 58
@@ -702,7 +719,7 @@ final List<Question> simulado100Questoes = [
       'c': 'renda vitalícia, apenas.',
       'd': 'renda temporária.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'a', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 59
@@ -714,7 +731,7 @@ final List<Question> simulado100Questoes = [
       'c': 'é importante nos casos em que se deseja habilitar renda mensal.',
       'd': 'é atualizada a cada cinco anos.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'c', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 60
@@ -729,7 +746,7 @@ final List<Question> simulado100Questoes = [
           'reserva não ser suficiente para a renda vitalícia acrescida do resgate pretendido.',
       'd': 'reserva acumulada não ser mais dela.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'd', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 61
@@ -745,7 +762,7 @@ final List<Question> simulado100Questoes = [
           'tanto o risco de crédito do administrador do plano, quanto o de mercado dos ativos que compõem a carteira de fundo de investimento especialmente constituído para o plano.',
       'd': 'o risco de crédito da seguradora proprietária do plano, apenas.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'a', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 62
@@ -753,7 +770,7 @@ final List<Question> simulado100Questoes = [
     enunciado:
         'Um indivíduo, 75 anos de idade, residente e domiciliado no Brasil, recebeu uma herança inesperada, vinda de um parente distante. Atualmente, a sua aposentadoria pelo Regime Geral de Previdência Social (RGPS) é insuficiente para honrar os compromissos mensais e foi aconselhado pelo especialista de investimentos a utilizar o montante recebido para realizar um aporte único em um plano de previdência complementar, com benefício de renda vitalícia. Nesse caso,\nI – é vedada a contratação de plano de previdência complementar por pessoas com mais de 65 anos de idade.\nII – não é permitida a contratação de plano de previdência complementar, com benefício de renda vitalícia, mediante um aporte único.\nIII – dentre os tipos de rendas atuariais disponíveis, a renda temporária é a que proporciona o maior valor mensal.\nIV – não existe tempo mínimo de permanência no plano de previdência complementar para optar pela transformação da reserva em renda mensal.\nEstá correto o que se afirmar em',
     alternativas: {'a': 'I e IV.', 'b': 'III e IV.', 'c': 'I.', 'd': 'l e ll.'},
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'b', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 63
@@ -766,7 +783,7 @@ final List<Question> simulado100Questoes = [
       'c': 'II e III, apenas.',
       'd': 'I e III, apenas.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'd', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 64
@@ -779,7 +796,7 @@ final List<Question> simulado100Questoes = [
       'c': 'pela diminuição do Imposto de Renda no ajuste anual.',
       'd': 'pela diminuição da alíquota que incide sobre aquela base.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'a', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 65
@@ -796,7 +813,7 @@ final List<Question> simulado100Questoes = [
       'd':
           'mantenha seu plano atual, uma vez que o intuito é o da habilitação de renda, pois planos antigos tendem a possuir tábuas atuariais mais vantajosas em relação aos valores de projeção de renda mensal.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'd', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 66
@@ -809,7 +826,7 @@ final List<Question> simulado100Questoes = [
       'c': 'R\$ 277.488,30',
       'd': 'R\$ 283.151,32',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'c', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 67
@@ -822,7 +839,7 @@ final List<Question> simulado100Questoes = [
       'c': '2,00% e 1,10% a.a.',
       'd': '4,00% e 0,50% a.a.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'd', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 68
@@ -839,7 +856,7 @@ final List<Question> simulado100Questoes = [
       'd':
           'continuar a aplicar o valor mensal no PGBL e contratar um plano do tipo Vida Gerador de Benefício Livre (VGBL) para o 13° salário.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'd', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 69
@@ -852,7 +869,7 @@ final List<Question> simulado100Questoes = [
       'c': 'R\$ 1.427.476, 10',
       'd': 'R\$ 977.476, 10',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'a', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 70
@@ -869,7 +886,7 @@ final List<Question> simulado100Questoes = [
       'd':
           'alterar o modelo da Declaração no próximo ano e contribuir para um plano de previdência complementar do tipo Vida Gerador de Benefício Livre (VGBL).',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'b', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 71
@@ -882,7 +899,7 @@ final List<Question> simulado100Questoes = [
       'c': 'R\$ 1.624.302,77',
       'd': 'R\$ 1.486.841,50',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'a', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 72
@@ -895,7 +912,7 @@ final List<Question> simulado100Questoes = [
       'c': 'R\$ 7.989,23',
       'd': 'R\$ 4.657,12',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'd', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 73
@@ -908,7 +925,7 @@ final List<Question> simulado100Questoes = [
       'c': 'R\$ 6.508,71',
       'd': 'R\$ 6.610,24',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'a', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 74
@@ -921,7 +938,7 @@ final List<Question> simulado100Questoes = [
       'c': 'R\$ 32.640,00.',
       'd': 'R\$ 28.800,00.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'b', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 75
@@ -934,7 +951,7 @@ final List<Question> simulado100Questoes = [
       'c': 'Plano Gerador de Benefício Livre (PGBL) do tipo Composto.',
       'd': 'Vida Gerador de Benefício Livre (VGBL) do tipo Renda Fixa.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'a', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 76
@@ -949,7 +966,7 @@ final List<Question> simulado100Questoes = [
           'mediana não é afetada por alterações nos valores extremos dos dados.',
       'd': 'moda é sempre única.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'c', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 77
@@ -962,7 +979,7 @@ final List<Question> simulado100Questoes = [
       'c': 'não sistemático.',
       'd': 'sistemático',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'c', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 78
@@ -992,7 +1009,7 @@ final List<Question> simulado100Questoes = [
       'c': 'I, Il e III.',
       'd': 'l, apenas.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'b', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 81
@@ -1005,7 +1022,7 @@ final List<Question> simulado100Questoes = [
       'c': 'na volatilidade histórica.',
       'd': 'na volatilidade implícita.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'b', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 82
@@ -1018,7 +1035,7 @@ final List<Question> simulado100Questoes = [
       'c': 'Value at Risk.',
       'd': 'índice de Treynor',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'd', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 84
@@ -1031,7 +1048,7 @@ final List<Question> simulado100Questoes = [
       'c': '9,00% а.а.',
       'd': '22,00% a.a.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'd', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 86
@@ -1044,7 +1061,7 @@ final List<Question> simulado100Questoes = [
       'c': 'o menor retorno esperado em relação a uma determinada variância.',
       'd': 'a menor variância dentre todos os portfólios.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'a', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 89
@@ -1060,7 +1077,7 @@ final List<Question> simulado100Questoes = [
           'ações que seguem o IBOV e debêntures incentivadas que replicam o IMA-B.',
       'd': 'ações que seguem o IBOV e fundos multimercado que replicam o IFMM.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'b', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 90
@@ -1073,7 +1090,7 @@ final List<Question> simulado100Questoes = [
       'c': 'II e III, apenas.',
       'd': 'I e III, apenas.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'a', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 91
@@ -1086,7 +1103,7 @@ final List<Question> simulado100Questoes = [
       'c': 'da aversão à perda.',
       'd': 'do excesso de confiança.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'c', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 92
@@ -1099,7 +1116,7 @@ final List<Question> simulado100Questoes = [
       'c': 'da aversão à perda.',
       'd': 'do framing.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'a', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 93
@@ -1112,7 +1129,7 @@ final List<Question> simulado100Questoes = [
       'c': 'II e III, apenas.',
       'd': 'l e II, apenas.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'b', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 95
@@ -1125,7 +1142,7 @@ final List<Question> simulado100Questoes = [
       'c': 'II e III, apenas.',
       'd': 'I e III, apenas.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'a', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 96
@@ -1138,7 +1155,7 @@ final List<Question> simulado100Questoes = [
       'c': 'I e III, apenas.',
       'd': 'l e II, apenas.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'a', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 97
@@ -1151,7 +1168,7 @@ final List<Question> simulado100Questoes = [
       'c': 'II e III, apenas.',
       'd': 'I, II e III.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'c', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 98
@@ -1164,7 +1181,7 @@ final List<Question> simulado100Questoes = [
       'c': 'III, apenas',
       'd': 'l e II, apenas.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'a', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 99
@@ -1177,7 +1194,7 @@ final List<Question> simulado100Questoes = [
       'c': 'II, III, I, IV, V e VI',
       'd': 'I, III, IV, II, VI e V',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'a', // Você pode inserir a resposta correta aqui
   ),
 
   // Pergunta 100
@@ -1191,13 +1208,15 @@ final List<Question> simulado100Questoes = [
       'c': 'a execução das recomendações apresentadas ao cliente.',
       'd': 'a análise e avaliação das condições financeiras do cliente.',
     },
-    respostaCorreta: '', // Você pode inserir a resposta correta aqui
+    respostaCorreta: 'a', // Você pode inserir a resposta correta aqui
   ),
 ];
 
 // SIMULADOO 2 ---------------------------------------------------------------------
+// FALTA 21-a | 25-d | 30-b | 32-a | 50-a | 52-c | 53-c | 55-b | 58-c | 64-d | 70-a
+// SIMULADOO 2 ---------------------------------------------------------------------
 
-final List<Question> simulado2 = [
+final List<Question> simulado1CEA = [
   // Pergunta 01
   Question(
     enunciado:
@@ -1208,7 +1227,7 @@ final List<Question> simulado2 = [
       'c': 'SUSEP - Superintendência de Seguros Privados.',
       'd': 'PREVIC - Superintendência Nacional de Previdência Complementar.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'c', // Insira a resposta correta aqui
   ),
 
   // Pergunta 02
@@ -1221,7 +1240,7 @@ final List<Question> simulado2 = [
       'c': 'Comitê de Políticas Monetárias',
       'd': 'Senado Federal',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'd', // Insira a resposta correta aqui
   ),
 
   // Pergunta 03
@@ -1234,7 +1253,7 @@ final List<Question> simulado2 = [
       'c': 'do Fundo de Investimento de Renda Fixa Simples.',
       'd': 'do Certificado de Depósito Bancário.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'a', // Insira a resposta correta aqui
   ),
 
   // Pergunta 04
@@ -1247,7 +1266,7 @@ final List<Question> simulado2 = [
       'c': 'fundos de pensão.',
       'd': 'fundos de pensão e carteira administrada.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'a', // Insira a resposta correta aqui
   ),
 
   // Pergunta 05
@@ -1260,7 +1279,7 @@ final List<Question> simulado2 = [
       'c': 'I e II.',
       'd': 'Nenhuma das duas.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'c', // Insira a resposta correta aqui
   ),
 
   // Pergunta 06
@@ -1276,7 +1295,7 @@ final List<Question> simulado2 = [
           'Os irmãos Gustavo e Rodrigo cometeram crime de insider trading, e o corretor Victório não cometeu nem crime e nem infração administrativa.',
       'd': 'Não houve nenhuma ilegalidade.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'c', // Insira a resposta correta aqui
   ),
 
   // Pergunta 07
@@ -1290,7 +1309,7 @@ final List<Question> simulado2 = [
           'Média das taxas de juros em empréstimos interbancários realizada exclusivamente entre bancos que não são do mesmo grupo financeiro.',
       'd': 'Taxa de inflação atrelada aos preços do varejo.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'c', // Insira a resposta correta aqui
   ),
 
   // Pergunta 08
@@ -1307,7 +1326,7 @@ final List<Question> simulado2 = [
       'd':
           'Não será lançado em nenhuma conta, pois a receita federal, juntamente com o COAF, considerará esta operação ilegal, pois todos os salários devem ser pagos no Brasil.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'c', // Insira a resposta correta aqui
   ),
 
   // Pergunta 09
@@ -1324,7 +1343,7 @@ final List<Question> simulado2 = [
       'd':
           'tenha um menor volume de remessas de lucros e juros de empréstimos enviados para o exterior.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'b', // Insira a resposta correta aqui
   ),
 
   // Pergunta 10
@@ -1341,7 +1360,7 @@ final List<Question> simulado2 = [
       'd':
           'redução do déficit da conta turismo e aumento da margem de ganho dos exportadores.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: '10', // Insira a resposta correta aqui
   ),
 
   // Pergunta 11
@@ -1354,7 +1373,7 @@ final List<Question> simulado2 = [
       'c': 'R\$ 3.200,00',
       'd': 'R\$ 7.200,00',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'c', // Insira a resposta correta aqui
   ),
 
   // Pergunta 12
@@ -1367,7 +1386,7 @@ final List<Question> simulado2 = [
       'c': '110 meses',
       'd': '170 meses',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'a', // Insira a resposta correta aqui
   ),
 
   // Pergunta 13
@@ -1380,7 +1399,7 @@ final List<Question> simulado2 = [
       'c': '- R\$ 4.923,00',
       'd': '+ R\$ 4.923,00',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'b', // Insira a resposta correta aqui
   ),
 
   // Pergunta 14
@@ -1393,7 +1412,7 @@ final List<Question> simulado2 = [
       'c': 'III, apenas.',
       'd': 'II, apenas.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'd', // Insira a resposta correta aqui
   ),
 
   // Pergunta 15
@@ -1406,7 +1425,7 @@ final List<Question> simulado2 = [
       'c': 'I, II e IV, apenas.',
       'd': 'I, III e IV, apenas.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'c', // Insira a resposta correta aqui
   ),
 
   // Pergunta 16
@@ -1419,7 +1438,7 @@ final List<Question> simulado2 = [
       'c': 'R\$ 111.312,00',
       'd': 'R\$ 112.530,00',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'b', // Insira a resposta correta aqui
   ),
 
   // Pergunta 17
@@ -1433,7 +1452,7 @@ final List<Question> simulado2 = [
       'd':
           'O comprador da repo vende os títulos no início da operação para, em um segundo momento, recompra-los pagando também a “taxa de recompra”.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'b', // Insira a resposta correta aqui
   ),
 
   // Pergunta 18
@@ -1446,20 +1465,21 @@ final List<Question> simulado2 = [
       'c': '11,45% a.a.',
       'd': '12,27% a.a.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'b', // Insira a resposta correta aqui
   ),
 
   // Pergunta 19
   Question(
     enunciado:
         'Uma empresa apresentou, ao final do último Exercício Social de 2015, as seguintes Demonstrações de Resultados dos Exercícios de 2014 e 2015:',
+    imagem: 'assets/images/questao19-S1.png', // Caminho da imagem
     alternativas: {
       'a': 'R\$ 21.800,00',
       'b': 'R\$ 9.960,00',
       'c': 'R\$ 17.600,00',
       'd': 'R\$ 14.600,00',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'c', // Insira a resposta correta aqui
   ),
 
   // Pergunta 20
@@ -1476,7 +1496,7 @@ final List<Question> simulado2 = [
       'd':
           'possuir no seu capital exclusivamente ações ordinárias com direito a voto.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'b', // Insira a resposta correta aqui
   ),
 
   // Pergunta 22
@@ -1489,7 +1509,7 @@ final List<Question> simulado2 = [
       'c': 'a obrigação de vender a moeda.',
       'd': 'o direito de comprar a moeda.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'c', // Insira a resposta correta aqui
   ),
 
   // Pergunta 23
@@ -1505,7 +1525,7 @@ final List<Question> simulado2 = [
       'd':
           'Comprar duas puts do mesmo ativo-objeto, com igual vencimento, mas com preço de exercícios diferentes.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'a', // Insira a resposta correta aqui
   ),
 
   // Pergunta 24
@@ -1520,7 +1540,7 @@ final List<Question> simulado2 = [
       'd':
           'obrigatoriamente entregar o DIE e opcionalmente colher a assinatura no TA.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'a', // Insira a resposta correta aqui
   ),
 
   // Pergunta 26
@@ -1533,7 +1553,7 @@ final List<Question> simulado2 = [
       'c': 'R\$ 200,00',
       'd': 'R\$ 3.000,00',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'c', // Insira a resposta correta aqui
   ),
 
   // Pergunta 27
@@ -1546,7 +1566,7 @@ final List<Question> simulado2 = [
       'c': 'Isento e carne leão até 27,5%.',
       'd': 'Carne leão até 27,5% e isento.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'b', // Insira a resposta correta aqui
   ),
 
   // Pergunta 28
@@ -1559,7 +1579,7 @@ final List<Question> simulado2 = [
       'c': 'a transformação da classe aberta para classe fechada.',
       'd': 'o fechamento da classe de cotas para realização de resgates.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'd', // Insira a resposta correta aqui
   ),
 
   // Pergunta 29
@@ -1576,7 +1596,7 @@ final List<Question> simulado2 = [
       'd':
           'Os cotistas são responsáveis pela gestão da liquidez do fundo, através da definição do Regulamento.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'a', // Insira a resposta correta aqui
   ),
 
   // Pergunta 31
@@ -1589,7 +1609,7 @@ final List<Question> simulado2 = [
       'c': 'alta das taxas de juro em dólar no mercado norte americano.',
       'd': 'alta do cupom cambial no mercado brasileiro.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'd', // Insira a resposta correta aqui
   ),
 
   // Pergunta 33
@@ -1604,7 +1624,7 @@ final List<Question> simulado2 = [
       'd':
           'fechadas serem aqueles em que os cotistas não podem resgatar as suas cotas.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'd', // Insira a resposta correta aqui
   ),
 
   // Pergunta 34
@@ -1617,7 +1637,7 @@ final List<Question> simulado2 = [
       'c': 'I e III, apenas.',
       'd': 'I, II e III.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'd', // Insira a resposta correta aqui
   ),
 
   // Pergunta 35
@@ -1630,7 +1650,7 @@ final List<Question> simulado2 = [
       'c': 'II, III e IV',
       'd': 'I e IV',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'a', // Insira a resposta correta aqui
   ),
 
   // Pergunta 36
@@ -1643,7 +1663,7 @@ final List<Question> simulado2 = [
       'c': 'I e III, apenas.',
       'd': 'II e III, apenas.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'b', // Insira a resposta correta aqui
   ),
 
   // Pergunta 37
@@ -1656,7 +1676,7 @@ final List<Question> simulado2 = [
       'c': 'custodiante',
       'd': 'investidor',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'd', // Insira a resposta correta aqui
   ),
 
   // Pergunta 38
@@ -1669,7 +1689,7 @@ final List<Question> simulado2 = [
       'c': 'FIP, apenas.',
       'd': 'FIP e Clube de Investimentos.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'a', // Insira a resposta correta aqui
   ),
 
   // Pergunta 39
@@ -1685,7 +1705,7 @@ final List<Question> simulado2 = [
       'd':
           'controle dos ativos financeiros da carteira, despesas e encargos sobre eles incidentes.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'c', // Insira a resposta correta aqui
   ),
 
   // Pergunta 40
@@ -1702,7 +1722,7 @@ final List<Question> simulado2 = [
       'd':
           'preço de fechamento, se esses ativos forem líquidos ou pelo último preço negociado, se forem ilíquidos.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'c', // Insira a resposta correta aqui
   ),
 
   // Pergunta 41
@@ -1716,7 +1736,7 @@ final List<Question> simulado2 = [
       'c': 'De PGBL para PGBL, de VGBL para VGBL com imposto de renda.',
       'd': 'De PGBL para PGBL, de VGBL para VGBL sem imposto de renda.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'd', // Insira a resposta correta aqui
   ),
 
   // Pergunta 42
@@ -1733,7 +1753,7 @@ final List<Question> simulado2 = [
       'd':
           'Poderia trocar de plano fazendo uma portabilidade sem cobrança de imposto de renda, desde que contratasse um seguro de vida também.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'b', // Insira a resposta correta aqui
   ),
 
   // Pergunta 43
@@ -1749,7 +1769,7 @@ final List<Question> simulado2 = [
       'd':
           'Rendimentos Tributáveis recebidos de Pessoa Jurídica, ambos os valores.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'b', // Insira a resposta correta aqui
   ),
 
   // Pergunta 44
@@ -1766,7 +1786,7 @@ final List<Question> simulado2 = [
       'd':
           'Não deve realizar a portabilidade, pois ele já contribui há mais de 10 anos no plano atual e faria ele recomeçar do zero a contagem da tabela regressiva.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'a', // Insira a resposta correta aqui
   ),
 
   // Pergunta 45
@@ -1779,7 +1799,7 @@ final List<Question> simulado2 = [
       'c': 'R\$ 1.454.681,00',
       'd': 'R\$ 1.960.784,00',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'b', // Insira a resposta correta aqui
   ),
 
   // Pergunta 46
@@ -1792,7 +1812,7 @@ final List<Question> simulado2 = [
       'c': 'R\$ 2.897,00',
       'd': 'R\$ 14.245,00',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'a', // Insira a resposta correta aqui
   ),
 
   // Pergunta 47
@@ -1805,7 +1825,7 @@ final List<Question> simulado2 = [
       'c': 'PGBL tabela progressiva.',
       'd': 'PGBL tabela regressiva.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'a', // Insira a resposta correta aqui
   ),
 
   // Pergunta 48
@@ -1818,7 +1838,7 @@ final List<Question> simulado2 = [
       'c': 'R\$ 45.576,00',
       'd': 'R\$ 68.365,00',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'b', // Insira a resposta correta aqui
   ),
 
   // Pergunta 49
@@ -1832,7 +1852,7 @@ final List<Question> simulado2 = [
       'd':
           'Não é possível calcular o retorno esperado sem saber as covariâncias entre os retornos dos produtos',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'a', // Insira a resposta correta aqui
   ),
 
   // Pergunta 51
@@ -1840,7 +1860,7 @@ final List<Question> simulado2 = [
     enunciado:
         'Um investidor possui R\$ 20.000,00 no ativo X e R\$ 50.000,00 no ativo Y, no qual possuem, respectivamente, volatilidade de 15% e de 5%. Sabendo que esses ativos possuem um coeficiente de correlação de 0,65, você como profissional do mercado financeiro, responde ao cliente que o risco da carteira é de:',
     alternativas: {'a': '1,89%', 'b': '5,16%', 'c': '7,14%', 'd': '8,77%'},
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'c', // Insira a resposta correta aqui
   ),
 
   // Pergunta 54
@@ -1856,7 +1876,7 @@ final List<Question> simulado2 = [
       'd':
           'É uma evolução ao Modelo de Markowitz, ao adicionar um ativo livre de risco à fronteira eficiente',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'd', // Insira a resposta correta aqui
   ),
 
   // Pergunta 56
@@ -1871,7 +1891,7 @@ final List<Question> simulado2 = [
       'c': 'Recalcular o Back Test da carteira de investimentos.',
       'd': 'Acionar o Stop Loss.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'd', // Insira a resposta correta aqui
   ),
 
   // Pergunta 57
@@ -1884,7 +1904,7 @@ final List<Question> simulado2 = [
       'c': 'I e II, apenas',
       'd': 'I, II e III',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'c', // Insira a resposta correta aqui
   ),
 
   // Pergunta 59
@@ -1897,7 +1917,7 @@ final List<Question> simulado2 = [
       'c': 'Experiência em investimento.',
       'd': 'Cenário macroeconômico.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'd', // Insira a resposta correta aqui
   ),
 
   // Pergunta 60
@@ -1910,7 +1930,7 @@ final List<Question> simulado2 = [
       'c': 'II e III, apenas.',
       'd': 'I e II, apenas.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'b', // Insira a resposta correta aqui
   ),
 
   // Pergunta 61
@@ -1923,7 +1943,7 @@ final List<Question> simulado2 = [
       'c': 'Desconto Hiperbólico',
       'd': 'Aversão a perdas',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'a', // Insira a resposta correta aqui
   ),
 
   // Pergunta 62
@@ -1936,7 +1956,7 @@ final List<Question> simulado2 = [
       'c': 'ancoragem.',
       'd': 'representatividade.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'c', // Insira a resposta correta aqui
   ),
 
   // Pergunta 63
@@ -1949,7 +1969,7 @@ final List<Question> simulado2 = [
       'c': 'da ancoragem.',
       'd': 'da aversão à perda.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'd', // Insira a resposta correta aqui
   ),
 
   // Pergunta 65
@@ -1962,7 +1982,7 @@ final List<Question> simulado2 = [
       'c': 'CDB Pós Fixado a 100% CDI.',
       'd': 'Caderneta de Poupança.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'a', // Insira a resposta correta aqui
   ),
 
   // Pergunta 66
@@ -1975,7 +1995,7 @@ final List<Question> simulado2 = [
       'c': 'II e III, apenas.',
       'd': 'I, II e III.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'd', // Insira a resposta correta aqui
   ),
 
   // Pergunta 67
@@ -1988,7 +2008,7 @@ final List<Question> simulado2 = [
       'c': 'III, IV, V e VI, apenas.',
       'd': 'I, II, III, IV, V e VI.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'b', // Insira a resposta correta aqui
   ),
 
   // Pergunta 68
@@ -2004,7 +2024,7 @@ final List<Question> simulado2 = [
       'd':
           'Realizar análise fundamentalista ou técnica de ações de companhias brasileiras adquiridas pelo cliente.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'd', // Insira a resposta correta aqui
   ),
 
   // Pergunta 69
@@ -2017,13 +2037,15 @@ final List<Question> simulado2 = [
       'c': 'II e III, apenas.',
       'd': 'I, II e III.',
     },
-    respostaCorreta: '', // Insira a resposta correta aqui
+    respostaCorreta: 'a', // Insira a resposta correta aqui
   ),
 ];
 
-//SIMULADO3
+//SIMULADO 2 ----------------------------------------------------------------------------------------------
 
-final List<Question> simulado3 = [
+//SIMULADO 2 ----------------------------------------------------------------------------------------------
+
+final List<Question> simulado2 = [
   // Pergunta 01
   Question(
     enunciado: 'Uma das atribuições do Banco Central é:',
@@ -2048,19 +2070,19 @@ class DesempenhoPage extends StatelessWidget {
       appBar: AppBar(title: Text('Gráfico de Desempenho')),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
-        // child: PieChart(
-        //   PieChartData(
-        //     sections: desempenho.entries.map((entry) {
-        //       return PieChartSectionData(
-        //         value: entry.value,
-        //         title: '${entry.key} \n${entry.value.toStringAsFixed(1)}%',
-        //         color: _getColorForSimulado(entry.key),
-        //         radius: 80,
-        //         titleStyle: TextStyle(fontSize: 14, color: Colors.white),
-        //       );
-        //     }).toList(),
-        //   ),
-        // ),
+        child: PieChart(
+          PieChartData(
+            sections: desempenho.entries.map((entry) {
+              return PieChartSectionData(
+                value: entry.value,
+                title: '${entry.key} \n${entry.value.toStringAsFixed(1)}%',
+                color: _getColorForSimulado(entry.key),
+                radius: 80,
+                titleStyle: TextStyle(fontSize: 14, color: Colors.white),
+              );
+            }).toList(),
+          ),
+        ),
       ),
     );
   }
@@ -2103,13 +2125,13 @@ class HomePage extends StatelessWidget {
             ),
             SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () => navegarParaSimulado(context, simulado2),
-              child: Text('Simulado 2'),
+              onPressed: () => navegarParaSimulado(context, simulado1CEA),
+              child: Text('Simulado 1 CEA'),
             ),
             SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () => navegarParaSimulado(context, simulado3),
-              child: Text('Simulado 3'),
+              onPressed: () => navegarParaSimulado(context, simulado2),
+              child: Text('Simulado 2'),
             ),
             SizedBox(height: 40), // Espaço extra
             // 🔹 Botão para abrir o gráfico de desempenho
