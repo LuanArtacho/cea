@@ -35,7 +35,7 @@ Siga os passos abaixo para rodar o projeto localmente.
 
 1.  **Clone o repositório:**
     ```sh
-    git clone [https://github.com/seu-usuario/cea-app.git](https://github.com/seu-usuario/cea-app.git)
+    git clone [https://github.com/LuanArtacho/cea.git](https://github.com/LuanArtacho/cea.git)
     ```
 
 2.  **Acesse a pasta do projeto:**
@@ -56,12 +56,28 @@ Siga os passos abaixo para rodar o projeto localmente.
 ## 📂 Estrutura de Arquivos
 
 O projeto segue uma estrutura de pastas organizada para facilitar a manutenção e escalabilidade:
-lib/
-|-- data/         # Contém os dados dos simulados (perguntas e respostas)
-|-- models/       # Define os modelos de dados da aplicação (ex: Question)
-|-- pages/        # Contém as telas principais do aplicativo
-|-- widgets/      # Contém widgets reutilizáveis (ex: botões, cards)
-|-- main.dart     # Ponto de entrada da aplicação
+```
+  lib/
+  ├── data/
+  │   └── simulados.dart
+  ├── models/
+  │   └── question_model.dart
+  ├── pages/
+  │   ├── desempenho_page.dart
+  │   ├── home_page.dart
+  │   ├── quiz_page.dart
+  │   └── resultado_page.dart
+  ├── widgets/
+  │   └── answer_button.dart
+  └── main.dart
+```
+
+**Legenda:**
+-   `data/`: Contém os dados dos simulados (perguntas e respostas).
+-   `models/`: Define os modelos de dados da aplicação (ex: `Question`).
+-   `pages/`: Contém as telas principais do aplicativo.
+-   `widgets/`: Contém widgets reutilizáveis (ex: botões, cards).
+-   `main.dart`: Ponto de entrada da aplicação.
 
 ## 🛠️ Tecnologias Utilizadas
 
