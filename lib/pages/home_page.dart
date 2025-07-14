@@ -2,9 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:cea_app/data/simulados.dart';
-import 'package:cea_app/models/question_model.dart'; // <-- ADICIONE ESTA LINHA
+import 'package:cea_app/models/question_model.dart';
 import 'package:cea_app/pages/quiz_page.dart';
 import 'package:cea_app/pages/desempenho_page.dart';
+import 'package:cea_app/pages/historico_page.dart';
 
 class HomePage extends StatelessWidget {
   void navegarParaSimulado(
@@ -63,18 +64,28 @@ class HomePage extends StatelessWidget {
               child: Text('Simulado 4'),
             ),
             SizedBox(height: 40),
+
+            // Botão para o Histórico
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(backgroundColor: Colors.teal),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HistoricoPage()),
+                );
+              },
+              child: Text('Ver Histórico de Resultados'),
+            ),
+            SizedBox(height: 20),
+
+            // BOTÃO DO GRÁFICO MODIFICADO AQUI
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => DesempenhoPage(
-                      desempenho: {
-                        'Simulado 1': 80.0,
-                        'Simulado 2': 60.0,
-                        'Simulado 3': 90.0,
-                      },
-                    ),
+                    // Agora apenas chama a DesempenhoPage sem parâmetros
+                    builder: (context) => DesempenhoPage(),
                   ),
                 );
               },

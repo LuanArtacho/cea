@@ -1,19 +1,47 @@
+// lib/pages/resultado_page.dart
+
 import 'package:flutter/material.dart';
 import 'package:cea_app/pages/home_page.dart';
+import 'package:cloud_firestore/cloud_firestore.dart'; // 1. Importe o Firestore
 
 class ResultadoPage extends StatelessWidget {
   final int acertos;
   final int total;
   final String tempo;
+  final String tituloSimulado; // 2. Adicione esta linha para receber o título
 
   ResultadoPage({
     required this.acertos,
     required this.total,
     required this.tempo,
+    required this.tituloSimulado, // 3. Adicione este parâmetro
   });
+
+  // 4. Crie a função para salvar os dados no Firebase
+  Future<void> _salvarResultado() async {
+    try {
+      final firestore = FirebaseFirestore.instance;
+      // 'historico_simulados' será o nome da nossa coleção no banco de dados
+      await firestore.collection('historico_simulados').add({
+        'titulo': tituloSimulado,
+        'acertos': acertos,
+        'totalPerguntas': total,
+        'percentual': (acertos / total) * 100,
+        'tempo': tempo,
+        'data': Timestamp.now(), // Salva a data e hora exatas da finalização
+      });
+      print('Resultado salvo com sucesso no Firestore!');
+    } catch (e) {
+      print('Ocorreu um erro ao salvar o resultado: $e');
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
+    // 5. Chame a função para salvar assim que a página for construída
+    // A função é "async", então ela rodará em segundo plano sem travar a UI.
+    _salvarResultado();
+
     double percentual = (acertos / total) * 100;
     bool passou = percentual >= 70;
 

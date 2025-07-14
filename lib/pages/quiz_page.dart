@@ -65,6 +65,7 @@ class _QuizPageState extends State<QuizPage> {
             acertos: acertos,
             total: widget.perguntas.length,
             tempo: _formatTime(_secondsElapsed),
+            tituloSimulado: widget.titulo,
           ),
         ),
       );

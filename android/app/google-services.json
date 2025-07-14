@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "62694469698",
+    "project_id": "app-cea-simulados",
+    "storage_bucket": "app-cea-simulados.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62694469698:android:a8cc5829f477528da3fddb",
+        "android_client_info": {
+          "package_name": "com.example.cea_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKp8IbIkf3oahLxKRasbGnnzgL-tXEU-E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
