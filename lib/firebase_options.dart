@@ -42,12 +42,12 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'AIzaSyBBgw4813T-WC4lM2dM-lx7SzAeHIRfW5U',
-    appId: '1:62694469698:web:f6eebf1cb2c21b14a3fddb',
+    appId: '1:62694469698:web:a795831f60c765b9a3fddb',
     messagingSenderId: '62694469698',
     projectId: 'app-cea-simulados',
     authDomain: 'app-cea-simulados.firebaseapp.com',
     storageBucket: 'app-cea-simulados.firebasestorage.app',
-    measurementId: 'G-D46BL5X41J',
+    measurementId: 'G-R7LYC54VV2',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
@@ -64,7 +64,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '62694469698',
     projectId: 'app-cea-simulados',
     storageBucket: 'app-cea-simulados.firebasestorage.app',
-    iosBundleId: 'com.example.cea_app', // <-- LINHA CORRIGIDA
+    iosBundleId: 'com.example.ceaApp',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
@@ -73,7 +73,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '62694469698',
     projectId: 'app-cea-simulados',
     storageBucket: 'app-cea-simulados.firebasestorage.app',
-    iosBundleId: 'com.example.cea_app', // <-- LINHA CORRIGIDA
+    iosBundleId: 'com.example.ceaApp',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
@@ -85,4 +85,5 @@ class DefaultFirebaseOptions {
     storageBucket: 'app-cea-simulados.firebasestorage.app',
     measurementId: 'G-R7LYC54VV2',
   );
+
 }

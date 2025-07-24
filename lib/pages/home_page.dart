@@ -6,6 +6,7 @@ import 'package:cea_app/models/question_model.dart';
 import 'package:cea_app/pages/quiz_page.dart';
 import 'package:cea_app/pages/desempenho_page.dart';
 import 'package:cea_app/pages/historico_page.dart';
+import 'package:cea_app/pages/teste_firebase_page.dart'; // 1. Import the new test page
 
 class HomePage extends StatelessWidget {
   void navegarParaSimulado(
@@ -31,65 +32,78 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            // 2. Add the temporary test button here
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(backgroundColor: Colors.orange),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const TesteFirebasePage(),
+                  ),
+                );
+              },
+              child: const Text('PÁGINA DE TESTE FIREBASE'),
+            ),
+            const SizedBox(height: 40),
+
+            // --- Rest of your original buttons ---
             ElevatedButton(
               onPressed: () => navegarParaSimulado(
                 context,
                 simulado100Questoes,
                 'Simulado 100 Questões',
               ),
-              child: Text('Simulado 100 Questões CEA'),
+              child: const Text('Simulado 100 Questões CEA'),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () =>
                   navegarParaSimulado(context, simulado1CEA, 'Simulado 1'),
-              child: Text('Simulado 1 CEA'),
+              child: const Text('Simulado 1 CEA'),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () =>
                   navegarParaSimulado(context, simulado2, 'Simulado 2'),
-              child: Text('Simulado 2'),
+              child: const Text('Simulado 2'),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () =>
                   navegarParaSimulado(context, simulado3, 'Simulado 3'),
-              child: Text('Simulado 3'),
+              child: const Text('Simulado 3'),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () =>
                   navegarParaSimulado(context, simulado4, 'Simulado 4'),
-              child: Text('Simulado 4'),
+              child: const Text('Simulado 4'),
             ),
-            SizedBox(height: 40),
-
-            // Botão para o Histórico
+            const SizedBox(height: 40),
             ElevatedButton(
               style: ElevatedButton.styleFrom(backgroundColor: Colors.teal),
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => HistoricoPage()),
+                  MaterialPageRoute(
+                    builder: (context) => const HistoricoPage(),
+                  ),
                 );
               },
-              child: Text('Ver Histórico de Resultados'),
+              child: const Text('Ver Histórico de Resultados'),
             ),
-            SizedBox(height: 20),
-
-            // BOTÃO DO GRÁFICO MODIFICADO AQUI
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    // Agora apenas chama a DesempenhoPage sem parâmetros
-                    builder: (context) => DesempenhoPage(),
+                    builder: (context) => const DesempenhoPage(),
                   ),
                 );
               },
-              child: Text('Ver Gráfico de Desempenho'),
+              child: const Text('Ver Gráfico de Desempenho'),
             ),
           ],
         ),
